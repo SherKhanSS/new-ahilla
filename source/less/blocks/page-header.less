@@ -175,6 +175,12 @@
   border: none;
 }
 
+// кнопка найти
+
+.page-header__search {
+   display: none;
+}
+
 @media (max-width: @mobile-width-only) {
 
   .page-header__wrapper {
@@ -220,14 +226,11 @@
 
   .main-nav--closed .main-nav__toggle::before {
     content: "";
-
     position: absolute;
-    top: 15px;
-    left: 15px;
-
     width: 40px;
     height: 4px;
-
+    top: 15px;
+    left: 15px;
     background-color: @st;
     box-shadow: 0 10px 0 0 @st, 0 20px 0 0 @st;
   }
@@ -399,6 +402,10 @@
   .main-nav--closed .site-list__item {
     display: flex;
   }
+
+  .page-header__search {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -449,4 +456,126 @@
   //   padding: 26px 20px;
   // }
   // .site-list__item a:active {}
+
+  // кнопка найти
+
+  .page-header__search {
+    // max-width: 50px;
+    display: inline-block;
+    position: relative;
+  }
+
+// бургер для кнопки найти
+
+  .search-toggle {
+    padding: 10px 15px;
+    border: none;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    // color: #000000;
+    background-color: #ffffff;
+    outline: 0;
+  }
+
+  .search--closed .search-form {
+    display: none;
+  }
+
+  .search--closed .search-toggle {
+    height: 29px;
+    display: block;
+    position: relative;
+  }
+
+  .search--closed .search-toggle::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    left: 7px;
+    background-image: url("../img/icon-find.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .search--opened .search-toggle {
+    height: 29px;
+    display: block;
+    position: relative;
+  }
+
+  .search--opened .search-toggle::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    left: 7px;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .search--nojs .search-toggle {
+    // display: none;
+  }
+
+  // svg кнопки найти
+
+  // .search__find {
+  //   height: 8px;
+  //   display: block;
+  //   position: relative;
+  // }
+
+  // .search__find::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 15px;
+  //   height: 15px;
+  //   top: -3px;
+  //   left: -7px;
+  //   background-image: url("../img/icon-find.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
+
+  // // svg креста
+
+  // .search__cross {
+  //   display: block;
+  //   position: relative;
+  // }
+
+  // .search__cross::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 15px;
+  //   height: 15px;
+  //   top: -11px;
+  //   left: -7px;
+  //   background-image: url("../img/icon-cross.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  // }
+
+  // форма кнопки найти
+
+  .search-form {
+    width: 200px;
+    position: absolute;
+    right: -30px;
+    bottom: -33px;
+    // right: 0;
+    // transition: all 0.4s;
+    // transform: translate(0, -10px);
+    // opacity: 0;
+    // visibility: hidden;
+  }
+
+  .ty {
+    display: block;
+    margin-top: 0em;
+  }
 }

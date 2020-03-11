@@ -5,6 +5,8 @@
   background-color: burlywood;
 }
 
+// блоки
+
 .page-main__articles--plus {
   display: none;
 }
@@ -13,16 +15,69 @@
   background-color: cornflowerblue;
 }
 
+.articles__item {
+  height: 600px;
+  margin: 25px 0 25px 0;
+  background-color: sienna;
+  overflow: hidden;
+}
+
+// нумерация страниц журнала
+
+.newszine-pagination {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.pagination__nav {
+  display: block;
+  position: absolute;
+  top: -10px;
+}
+
+.pagination__text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.pagination__numbers {
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  color: #000000;
+  background-color: #ffffff;
+  outline: 0;
+  text-decoration: none;
+}
+
+.dots {
+  padding: 0;
+  border: none;
+}
+
+// бар
+
 .page-main__side {
   background-color: darkcyan;
+}
+
+.article__main {
+  padding-left: 15px;
 }
 
 .news__item {
   background-color: gainsboro;
 }
 
+// заголовок h3 в баре
+
 .new__topic {
-  padding-bottom: 10px;
+  padding: 10px;
   border-style: double;
   border-top: 1px solid#000000;
   border-left: none;
@@ -36,30 +91,48 @@
     flex-wrap: wrap;
   }
 
+  // блоки в планшете
+
   .page-main__articles {
     width: 50%;
-    padding-right: 25px;
+    padding: 0 25px 0 25px;
   }
+
+  // нумерация страниц журнала в планшете
+
+  .newszine-pagination {
+    margin-left: -190px;
+    display: block;
+  }
+
+  // бар в планшете
 
   // .page-main__side {
   //   padding-left: 150px
   // }
+
+  .articles__item {
+
+  }
+
 }
 
 @media (min-width: @desktop-width) {
-  // .page-main {
-  //   flex-wrap: nowrap;
-  // }
+
+  // блоки в мониторе
+
+  .page-main__articles--plus {
+    display: block;
+  }
 
   .page-main__articles {
     width: 33%;
   }
 
+  // бар в мониторе
+
   .page-main__side {
     width: 30%;
     margin-left: 49px;
-  }
-  .page-main__articles--plus {
-    display: block;
   }
 }
