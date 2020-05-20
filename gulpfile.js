@@ -17,7 +17,7 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("source/my-app/src/css"))
     .pipe(server.stream());
 });
 
@@ -25,13 +25,13 @@ gulp.task("server", function () {
   server.init({
     server: "source/",
     notify: false,
-    open: true,
+    open: false,
     cors: true,
     ui: false
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  // gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("start", gulp.series("css", "server"));
