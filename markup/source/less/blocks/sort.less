@@ -1,0 +1,79 @@
+.sort {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid @st;
+  border-bottom: 1px solid @st;
+  padding-top: 10px;
+}
+
+.sort__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+}
+
+.sort__item {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.sort__item span {
+  display: block;
+  margin-right: 5px;
+}
+
+.sort__link {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-top: -3px;
+  margin-left: 5px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 10px;
+    top: 5px;
+    left: 5px;
+    background-image: url("../img/icon-down-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:active::after {
+    opacity: 0.5;
+  }
+}
+
+.sort__link--up {
+
+  &::after {
+    transform: rotate(-180deg);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .sort__list {
+    flex-direction: row;
+    margin-right: 10px;
+  }
+
+  .sort__item {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sort {
+    justify-content: center;
+  }
+}
