@@ -1,5 +1,4 @@
 import {extend} from "../../utils.js";
-import {getAdaptedFilm} from "../../adapter/adapter.js";
 
 const AuthorizationStatus = {
   AUTH: `AUTH`,

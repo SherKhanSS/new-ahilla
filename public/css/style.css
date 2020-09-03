@@ -308,24 +308,28 @@ template {
   display: none;
 }
 @font-face {
+  font-display: swap;
   font-family: 'Verdana';
   font-style: normal;
   font-weight: 400;
   src: local('Verdana Regular'), local('Verdana-Regular'), url('../fonts/Verdana.woff2') format('woff2'), url('../fonts/Verdana.woff') format('woff');
 }
 @font-face {
+  font-display: swap;
   font-family: 'Verdana';
   font-style: italic;
   font-weight: 400;
   src: local('Verdana Italic'), local('Verdana-Italic'), url('../fonts/Verdana-Italic.woff2') format('woff2'), url('../fonts/Verdana-Italic.woff') format('woff');
 }
 @font-face {
+  font-display: swap;
   font-family: 'Verdana';
   font-style: normal;
   font-weight: 700;
   src: local('Verdana Bold'), local('Verdana-Bold'), url('../fonts/Verdana-Bold.woff2') format('woff2'), url('../fonts/Verdana-Bold.woff') format('woff');
 }
 @font-face {
+  font-display: swap;
   font-family: 'Verdana';
   font-style: italic;
   font-weight: 700;
@@ -785,7 +789,7 @@ img {
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   padding-bottom: 2px;
 }
 .navigation-link:before {

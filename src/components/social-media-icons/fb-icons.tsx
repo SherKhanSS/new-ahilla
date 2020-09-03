@@ -89,7 +89,7 @@ const FbIcon = (props) => {
         </g>
       </g>
     </svg>
-  )
-}
+  );
+};
 
 export default FbIcon;

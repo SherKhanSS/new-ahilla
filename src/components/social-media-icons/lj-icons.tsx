@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const LjIcon = (props) =>  {
+const LjIcon = (props) => {
   return (
     <svg viewBox="0 0 297.2 297.2" {...props}>
       <defs>
@@ -150,7 +150,7 @@ const LjIcon = (props) =>  {
         strokeWidth={3}
       />
     </svg>
-  )
-}
+  );
+};
 
 export default LjIcon;

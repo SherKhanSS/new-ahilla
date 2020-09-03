@@ -4,6 +4,10 @@ import {getCurrentGenre} from "../app-state/selectors.js";
 
 const GENRE_DEFAULT = `All genres`;
 
+export const getArticles = (state) => {
+  return state[NameSpace.DATA].articles;
+};
+
 export const getFilms = (state) => {
   return state[NameSpace.DATA].films;
 };

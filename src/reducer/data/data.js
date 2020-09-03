@@ -1,10 +1,12 @@
 import {extend} from "../../utils.js";
-import {getAdaptedFilm} from "../../adapter/adapter.js";
+
+import articles from "../../mocks";
 
 const GENRE_DEFAULT = `All genres`;
 const MAX_GENRES_LENGTH = 9;
 
 const initialState = {
+  articles,
   films: null,
   promoFilm: null,
   genres: null,

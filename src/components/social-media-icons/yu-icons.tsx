@@ -89,7 +89,7 @@ const YuIcon = (props) => {
         </g>
       </g>
     </svg>
-  )
-}
+  );
+};
 
 export default YuIcon;

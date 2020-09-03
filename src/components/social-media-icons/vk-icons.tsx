@@ -95,6 +95,6 @@ const VkIcon = () => {
       </g>
     </svg>
   );
-}
+};
 
 export default VkIcon;

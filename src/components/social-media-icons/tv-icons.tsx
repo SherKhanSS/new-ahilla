@@ -89,7 +89,7 @@ const TvIcon = (props) => {
         </g>
       </g>
     </svg>
-  )
-}
+  );
+};
 
 export default TvIcon;

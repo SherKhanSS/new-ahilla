@@ -101,6 +101,6 @@ const DzIcon = () => {
       </g>
     </svg>
   );
-}
+};
 
 export default DzIcon;

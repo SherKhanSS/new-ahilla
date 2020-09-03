@@ -1,3 +1,14 @@
+export interface Articles {
+  name: string,
+    author: string,
+    image: string,
+    date: number,
+    views: number,
+    category: string,
+    tags: string[],
+    content: string,
+}
+
 export interface Film {
   backgroundColor: string,
   cover: string,
